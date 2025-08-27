@@ -1,24 +1,106 @@
 let heartCount = 0;
 
-// document.getElementById('nen-heart-button').addEventListener("click", function(e){
-//     e.preventDefault();
-
-//     const heartCountElement = document.getElementById("heart-count").querySelector("p");
-
-//     heartCount++;
-
-//     heartCountElement.textContent = heartCount;
-// });
-
 // function to get heart count
+// --------------------------
 function getHeartCount(){
     const heartCountElement = document.getElementById("heart-count").querySelector("p");
-
+    
     heartCount++;
-
+    
     heartCountElement.textContent = heartCount;
 }
 
+let copyCount = 0;
+// function to get copy count
+function getCopyCount(){
+    const copyCountElement = document.getElementById("copy-count");
+
+    copyCount++;
+    
+    alert("Number is copied");
+    
+    copyCountElement.textContent = copyCount;
+}
+
+// copy to clipboard
+function copyToClipboard(serviceNumberId) {
+    
+    const serviceNumberElement = document.getElementById(serviceNumberId);
+
+    const serviceNumber = serviceNumberElement.innerText;
+
+    navigator.clipboard.writeText(serviceNumber)
+        .then(() => {
+            alert("Number copied to clipboard: " + serviceNumber);
+        })
+        .catch(err => {
+            console.error("Failed to copy text: ", err);
+            alert("Failed to copy the number. Please try again.");
+        });
+}
+
+// copy buttons
+// --------------------
+
+// National Emergency Number
+document.getElementById('nen-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('nen-service-no')
+})
+// Police Helpline Number
+document.getElementById('police-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('police-service-no')
+})
+// Fire Service Number
+document.getElementById('fire-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('fire-service-number')
+})
+// Ambulance Service
+document.getElementById('ambulance-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('ambulance-service-number')
+})
+// Women & Child Helpliner
+document.getElementById('wc-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('wc-service-number')
+})
+// Anti-Corruption Helpline 
+document.getElementById('anti-corruption-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('anti-corruption-service-number')
+})
+// Electricity Helpline
+document.getElementById('elect-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('elect-service-number')
+})
+// Brac Helpline
+document.getElementById('brac-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('brac-service-number')
+})
+// Bangladesh Railway Helpline
+document.getElementById('bd-rail-copy-btn').addEventListener ("click", function(e){
+    e.preventDefault();
+    getCopyCount()
+    copyToClipboard('bd-rail-service-number')
+})
+
+
+
+// heart button
+// ----------------------
 // National Emergency Number
 document.getElementById('nen-heart-button').addEventListener ("click", function(e){
     e.preventDefault();
@@ -74,6 +156,10 @@ document.getElementById('bd-rail-heart-button').addEventListener ("click", funct
     getHeartCount(heartCount)
 })
 
+
+
+// coin/call button
+// -----------------
 let coinCount = 100;
 
 const coinCountElement = document.getElementById("coin-count").querySelector("p");
@@ -81,6 +167,7 @@ const coinCountElement = document.getElementById("coin-count").querySelector("p"
 const callButtons = document.querySelectorAll('[id$="-call-btn"]');
 
 // function to get coin count
+// --------------------------
 function getCoinCount(serviceName, serviceNumber){
 
     if (coinCount >= 20) {
@@ -119,7 +206,6 @@ document.getElementById('fire-call-btn').addEventListener("click", function(e){
     const serviceNumber = document.getElementById("fire-service-number").innerText;
     getCoinCount(serviceName, serviceNumber);
 });
-
 
 // Ambulance Service
 document.getElementById('ambulance-call-btn').addEventListener ("click", function(e){
@@ -169,3 +255,24 @@ document.getElementById('bd-rail-call-btn').addEventListener ("click", function(
     getCoinCount(serviceName, serviceNumber)
 })
 
+// document.getElementById('nen-copy-btn').addEventListener("click", function(e) {
+//     e.preventDefault();
+
+//     // Select the service number element using its ID.
+//     const serviceNumberElement = document.getElementById("nen-service-no");
+
+//     // Get the text content (the phone number) from that element.
+//     const serviceNumber = serviceNumberElement.innerText;
+
+//     // Use the modern Clipboard API to write the text to the clipboard.
+//     navigator.clipboard.writeText(serviceNumber)
+//         .then(() => {
+//             // This code runs if the copy was successful.
+//             alert("Number copied to clipboard: " + serviceNumber);
+//         })
+//         .catch(err => {
+//             // This code runs if there was an error.
+//             console.error("Failed to copy text: ", err);
+//             alert("Failed to copy the number. Please try again.");
+//         });
+// });
