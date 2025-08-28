@@ -16,8 +16,6 @@ function getCopyCount() {
 
     copyCount++;
 
-    alert("Number is copied");
-
     copyCountElement.textContent = copyCount;
 }
 
@@ -175,7 +173,7 @@ function getCoinCount(serviceName, serviceNumber) {
         alert(`Calling ${serviceName}: ${serviceNumber}`)
         return true;
     } else {
-        alert("You don't have enough coins!");
+        alert("You don't have enough coins! At least 20 coins required.");
         return false;
     }
 
@@ -345,7 +343,7 @@ function getCallHistory() {
     for (const data of callHistoryData) {
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="bg-[#FAFAFA] h-[83px] mt-4 flex justify-between items-center p-4 rounded-lg">
+            <div class="bg-[#FAFAFA] h-[83px] mt-2 flex justify-between items-center p-4 rounded-lg">
                 <div>
                     <h2 class="font-[inter] font-semibold md:text-lg text-sm">${data.name}</h2>
                     <p class=" text-lg text-[#5C5C5C]">${data.number}</p>
