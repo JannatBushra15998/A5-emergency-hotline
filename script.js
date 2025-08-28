@@ -1,5 +1,6 @@
 let heartCount = 0;
 
+
 // function to get heart count
 // --------------------------
 function getHeartCount(){
@@ -182,13 +183,23 @@ function getCoinCount(serviceName, serviceNumber){
     
 }
 
+const callHistoryData = [];
 
 // National Emergency Number
 document.getElementById('nen-call-btn').addEventListener ("click", function(e){
     e.preventDefault();
     const serviceName = document.getElementById("nen-service-name").innerText
     const serviceNumber = document.getElementById("nen-service-no").innerText
-    getCoinCount(serviceName, serviceNumber)
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "National Emergency Number",
+        number: "999",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Police Helpline Number
@@ -196,7 +207,16 @@ document.getElementById('police-call-btn').addEventListener ("click", function(e
     e.preventDefault();
     const serviceName = document.getElementById("police-service-name").innerText
     const serviceNumber = document.getElementById("police-service-no").innerText
-    getCoinCount(serviceName, serviceNumber)
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Police Helpline Number",
+        number: "999",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Fire Service Number
@@ -204,7 +224,16 @@ document.getElementById('fire-call-btn').addEventListener("click", function(e){
     e.preventDefault();
     const serviceName = document.getElementById("fire-service-name").innerText;
     const serviceNumber = document.getElementById("fire-service-number").innerText;
-    getCoinCount(serviceName, serviceNumber);
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Fire Service Number",
+        number: "999",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 });
 
 // Ambulance Service
@@ -212,7 +241,16 @@ document.getElementById('ambulance-call-btn').addEventListener ("click", functio
     e.preventDefault();
     const serviceName = document.getElementById("ambulance-service-name").innerText
     const serviceNumber = document.getElementById("ambulance-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Ambulance Service",
+        number: "1994-999999",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Women & Child Helpline
@@ -220,7 +258,16 @@ document.getElementById('wc-call-btn').addEventListener ("click", function(e){
     e.preventDefault();
     const serviceName = document.getElementById("wc-service-name").innerText
     const serviceNumber = document.getElementById("wc-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Women & Child Helpline",
+        number: "109",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Anti-Corruption Helpline 
@@ -228,7 +275,16 @@ document.getElementById('anti-corruption-call-btn').addEventListener ("click", f
     e.preventDefault();
     const serviceName = document.getElementById("anti-corruption-service-name").innerText
     const serviceNumber = document.getElementById("anti-corruption-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+    
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Anti-Corruption Helpline",
+        number: "106",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Electricity Helpline
@@ -236,7 +292,16 @@ document.getElementById('elect-call-btn').addEventListener ("click", function(e)
     e.preventDefault();
     const serviceName = document.getElementById("elect-service-name").innerText
     const serviceNumber = document.getElementById("elect-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Electricity Helpline",
+        number: "16216",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
 // Brac Helpline
@@ -244,35 +309,54 @@ document.getElementById('brac-call-btn').addEventListener ("click", function(e){
     e.preventDefault();
     const serviceName = document.getElementById("brac-service-name").innerText
     const serviceNumber = document.getElementById("brac-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+    // getCoinCount(serviceName, serviceNumber)
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Brac Helpline",
+        number: "16445",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
-// National Emergency Number
+// Bangladesh Railway Helpline
 document.getElementById('bd-rail-call-btn').addEventListener ("click", function(e){
     e.preventDefault();
     const serviceName = document.getElementById("bd-rail-service-name").innerText
     const serviceNumber = document.getElementById("bd-rail-service-number").innerText
-    getCoinCount(serviceName, serviceNumber)
+    // getCoinCount(serviceName, serviceNumber)
+
+    if (getCoinCount(serviceName, serviceNumber)) {
+    const data = {
+        name: "Bangladesh Railway Helpline",
+        number: "163",
+        date: new Date().toLocaleTimeString()
+    };
+    callHistoryData.push(data);
+    getCallHistory();
+}
 })
 
-// document.getElementById('nen-copy-btn').addEventListener("click", function(e) {
-//     e.preventDefault();
 
-//     // Select the service number element using its ID.
-//     const serviceNumberElement = document.getElementById("nen-service-no");
+function getCallHistory(){
+    const callHistoryContainer = document.getElementById("call-history")
+    callHistoryContainer.innerHTML = ''; 
 
-//     // Get the text content (the phone number) from that element.
-//     const serviceNumber = serviceNumberElement.innerText;
-
-//     // Use the modern Clipboard API to write the text to the clipboard.
-//     navigator.clipboard.writeText(serviceNumber)
-//         .then(() => {
-//             // This code runs if the copy was successful.
-//             alert("Number copied to clipboard: " + serviceNumber);
-//         })
-//         .catch(err => {
-//             // This code runs if there was an error.
-//             console.error("Failed to copy text: ", err);
-//             alert("Failed to copy the number. Please try again.");
-//         });
-// });
+    for (const data of callHistoryData){
+        const div = document.createElement("div")
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] h-[83px] mt-4 flex justify-between items-center p-4 rounded-lg">
+                <div>
+                    <h2 class="font-semibold md:text-lg text-sm">${data.name}</h2>
+                    <p class=" text-lg text-[#5C5C5C]">${data.number}</p>
+                </div>
+                <div>
+                    <p class="text-lg">${data.date}</p>
+                </div>
+            </div>
+        `;
+        callHistoryContainer.appendChild(div);
+    }
+}
