@@ -347,16 +347,16 @@ function getCallHistory() {
         div.innerHTML = `
             <div class="bg-[#FAFAFA] h-[83px] mt-4 flex justify-between items-center p-4 rounded-lg">
                 <div>
-                    <h2 class="font-semibold md:text-lg text-sm">${data.name}</h2>
+                    <h2 class="font-[inter] font-semibold md:text-lg text-sm">${data.name}</h2>
                     <p class=" text-lg text-[#5C5C5C]">${data.number}</p>
                 </div>
                 <div>
-                    <p class="text-lg">${data.date}</p>
+                    <p class="text-lg text-[#111111]">${data.date}</p>
                 </div>
             </div>
         `;
         callHistoryContainer.appendChild(div);
-    }
+    } 
 }
 
 // clear button

@@ -12,10 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
-    <section class="max-w-[1920px] mx-auto bg-[#f5fff6]">
+    <section class=" max-w-[1920px] mx-auto bg-[#f5fff6]">
         <!-- nav bar -->
         <div
             class=" bg-white selection: md:px-[60px] px-5 h-[100px] flex md:flex-row flex-col justify-between items-center gap-1 mt-1">
@@ -27,7 +38,7 @@
                     Emergency Service</h1>
             </div>
 
-            <div class="flex items-center md:gap-4 gap-1.5">
+            <div class="font-[inter] flex items-center md:gap-4 gap-1.5">
                 <!-- heart count -->
                 <div id="heart-count"
                     class=" rounded-[50px] bg-[#41ff6b1a] h-[52px] md:w-[123px] w-[80px] flex justify-center items-center">
@@ -37,7 +48,7 @@
                 <!-- coin-count -->
                 <div id="coin-count"
                     class=" rounded-[50px] bg-[#41ff6b1a] h-[52px] md:w-[123px] w-[80px] flex justify-center items-center">
-                    <p class="mr-1 font-black">100</p>
+                    <p class="mr-1 font-black font-inter">100</p>
                     <img src="assets/coin.png" alt="" class="h-[30px] w-[30px] ml-1">
                 </div>
                 <!-- copy count -->
@@ -50,10 +61,12 @@
         <!-- hero section -->
         <div class="bg-gradient-to-r from-[#013122] via-[#006747] via-50% to-[#013223] text-white p-4 mt-4">
             <img src="assets/logo-dark.png" alt="" class="h-[92px] w-[92px] items-center mx-auto">
-            <h1 class="md:font-bold font-semibold md:text-[40px] text-3xl text-center md:mt-2 mt-1">Emergency Service
+            <h1 class=" md:font-bold font-semibold md:text-[40px] text-3xl text-center md:mt-2 mt-1">
+                Emergency Service
                 Directory
             </h1>
-            <p class="md:font-semibold font-medium md:text-[20px] text-sm text-center md:mt-5 mt-2 ">Government
+            <p class=" md:font-semibold font-medium md:text-[20px] text-sm text-center md:mt-5 mt-2 ">
+                Government
                 Emergency
                 Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
         </div>
@@ -74,20 +87,21 @@
                     </div>
                     <!-- title -->
                     <div class="mt-4 mb-6">
-                        <h2 id="nen-service-name" class="font-bold text-2xl">National Emergency Number</h2>
-                        <p class="text-lg text-[#5C5C5C]">National Emergency</p>
+                        <h2 id="nen-service-name" class=" font-bold text-2xl">National Emergency Number</h2>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">National Emergency</p>
                     </div>
                     <div>
-                        <h1 id="nen-service-no" class="font-bold text-[32px]">999</h1>
-                        <div class="bg-[#F2F2F2] rounded-[9999px] w-[53px] h-[36px] flex justify-center items-center">
+                        <h1 id="nen-service-no" class="font-[roboto] font-bold text-[32px]">999</h1>
+                        <div
+                            class="bg-[#F2F2F2] hind-madurai rounded-[9999px] w-[53px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">All</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="nen-copy-btn"
-                            class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                            class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg "><i
+                                class="fa-regular it fa-clone rotate-x-180 "></i> Copy</button>
                         <button id="nen-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -105,20 +119,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="police-service-name" class="font-bold text-2xl">Police Helpline Number</h2>
-                        <p class="text-lg text-[#5C5C5C]">Police</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Police</p>
                     </div>
                     <div>
-                        <h1 id="police-service-no" class="font-bold text-[32px]">999</h1>
+                        <h1 id="police-service-no" class="font-[roboto] font-bold text-[32px]">999</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Police</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="police-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="police-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -136,19 +150,19 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="fire-service-name" class="font-bold text-2xl">Fire Service Number</h2>
-                        <p class="text-lg text-[#5C5C5C]">Fire Service</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Fire Service</p>
                     </div>
                     <div>
-                        <h1 id="fire-service-number" class="font-bold text-[32px]">999</h1>
+                        <h1 id="fire-service-number" class="font-[roboto] font-bold text-[32px]">999</h1>
                         <div class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Fire</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="fire-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="fire-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -166,20 +180,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="ambulance-service-name" class="font-bold text-2xl">Ambulance Service</h2>
-                        <p class="text-lg text-[#5C5C5C]">Ambulance</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Ambulance</p>
                     </div>
                     <div>
-                        <h1 id="ambulance-service-number" class="font-bold text-[32px]">1994-999999</h1>
+                        <h1 id="ambulance-service-number" class="font-[roboto] font-bold text-[32px]">1994-999999</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg ">Health</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="ambulance-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="ambulance-call-btn"
                             class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
@@ -198,20 +212,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="wc-service-name" class="font-bold text-2xl">Women & Child Helpline</h2>
-                        <p class="text-lg text-[#5C5C5C]">Women & Child Helpline</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Women & Child Helpline</p>
                     </div>
                     <div>
-                        <h1 id="wc-service-number" class="font-bold text-[32px]">109</h1>
+                        <h1 id="wc-service-number" class="font-[roboto] font-bold text-[32px]">109</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Help</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="wc-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="wc-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -229,20 +243,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="anti-corruption-service-name" class="font-bold text-2xl">Anti-Corruption Helpline</h2>
-                        <p class="text-lg text-[#5C5C5C]">Anti-Corruption</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Anti-Corruption</p>
                     </div>
                     <div>
-                        <h1 id="anti-corruption-service-number" class="font-bold text-[32px]">106</h1>
+                        <h1 id="anti-corruption-service-number" class="font-[roboto] font-bold text-[32px]">106</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Govt.</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="anti-corruption-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="anti-corruption-call-btn"
                             class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
@@ -261,20 +275,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="elect-service-name" class="font-bold text-2xl">Electricity Helpline</h2>
-                        <p class="text-lg text-[#5C5C5C]">Electricity Outage</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Electricity Outage</p>
                     </div>
                     <div>
-                        <h1 id="elect-service-number" class="font-bold text-[32px]">16216</h1>
+                        <h1 id="elect-service-number" class="font-[roboto] font-bold text-[32px]">16216</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Electricity</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="elect-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180 "></i> Copy</button>
                         <button id="elect-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -292,20 +306,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="brac-service-name" class="font-bold text-2xl">Brac Helpline</h2>
-                        <p class="text-lg text-[#5C5C5C]">Brac</p>
+                        <p class=" font-[roboto] text-lg text-[#5C5C5C]">Brac</p>
                     </div>
                     <div>
-                        <h1 id="brac-service-number" class="font-bold text-[32px]">16445</h1>
+                        <h1 id="brac-service-number" class="font-[roboto] font-bold text-[32px]">16445</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">NGO</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="brac-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4"></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="brac-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -323,20 +337,20 @@
                     <!-- title -->
                     <div class="mt-4 mb-6">
                         <h2 id="bd-rail-service-name" class="font-bold text-2xl">Bangladesh Railway Helpline </h2>
-                        <p class="text-lg text-[#5C5C5C]">Bangladesh Railwayy</p>
+                        <p class="font-[roboto] text-lg text-[#5C5C5C]">Bangladesh Railway</p>
                     </div>
                     <div>
-                        <h1 id="bd-rail-service-number" class="font-bold text-[32px]">163</h1>
+                        <h1 id="bd-rail-service-number" class="font-[roboto] font-bold text-[32px]">163</h1>
                         <div
                             class="bg-[#F2F2F2] rounded-[9999px] w-fit px-4 py-[6px] h-[36px] flex justify-center items-center">
                             <p class="text-[#5C5C5C] text-lg">Travel</p>
                         </div>
                     </div>
                     <!-- button -->
-                    <div class="flex justify-between mt-6 gap-1">
+                    <div class="font-[roboto] flex justify-between mt-6 gap-1">
                         <button id="bd-rail-copy-btn"
                             class="btn flex-1/2 bg-white text-[#5C5C5C] w-[182px] h-[40px] border-1 border-[#D4D6D5] rounded-lg"><i
-                                class="fa-regular fa-clone rotate-x-180 p-4 "></i> Copy</button>
+                                class="fa-regular fa-clone rotate-x-180"></i> Copy</button>
                         <button id="bd-rail-call-btn" class="btn flex-1/2 text-white bg-[#00A63E] w-[182px] h-[40px]"><i
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
@@ -348,10 +362,10 @@
             <div class=" h-[1140px] bg-white rounded-xl shadow-md flex-1 p-6">
                 <!-- title -->
                 <div class="h-[52px] flex justify-between items-center">
-                    <p class="font-medium text-[20px]"><i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History
+                    <p class="font-medium text-[20px]"><i class="font-[roboto] fa-regular fa-clock text-[#5C5C5C]"></i> Call History
                     </p>
                     <button id="clear-button"
-                        class="btn rounded-[50px] h-[52px] md:w-[114px] w-[90px] bg-[#00A63E] text-white font-semibold">Clear</button>
+                        class="font-[inter] btn rounded-[50px] h-[52px] md:w-[114px] w-[90px] bg-[#00A63E] text-white font-semibold">Clear</button>
                 </div>
                 <!-- history -->
                 <div id="call-history">
