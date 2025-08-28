@@ -1,12 +1,12 @@
 ## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
--getElementById: Selects a single element by its unique ID and returns an element object or null.
+-getElementById: Selects a single element by its unique ID and it returns an element object or null.
 
 -getElementsByClassName: Selects multiple elements by their class name and returns a live HTML collection.
 
--querySelector: Selects the first element that matches a specified selector. Returns an element object or null.
+-querySelector: Selects the first element that matches a specified CSS selector and returns an element object or null.
 
--querySelectorAll: Selects all the elements that matches a specified selector. Returns a static NodeList.
+-querySelectorAll: Selects all the elements that matches a specified CSS selector. It returns a static NodeList.
 
 
 ### How do you create and insert a new element into the DOM?
